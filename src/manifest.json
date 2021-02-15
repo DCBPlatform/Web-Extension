@@ -1,0 +1,21 @@
+{
+    "author": "DCB",
+    "homepage_url": "https://dcb.my",
+    "name": "DCB Extension",
+    "short_name": "DCB",
+    "version": "1.0.0",
+    "description": "This extension enables you to participate in the DCB ecosystem",
+    "manifest_version": 2,
+    "browser_action": {
+        "default_title": "DCB Extension",
+        "default_popup": "index.html"
+
+    },
+    "icons": {
+        "16": "assets/img/brand/logo16.png",
+        "48": "assets/img/brand/logo48.png",
+        "128": "assets/img/brand/logo128.png"
+    },
+    "content_security_policy": "script-src 'self' blob: 'unsafe-eval' 'wasm-eval'; object-src 'self'"
+
+}

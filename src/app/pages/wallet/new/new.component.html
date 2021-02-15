@@ -1,0 +1,22 @@
+<div class="container px-3">
+
+    <div class="form-group mt-3">
+        <h2>Create New Wallet</h2>
+        <p>Create a wallet if you do not have a wallet previously or you would like to create an additional wallet.</p>
+        <label class="form-control-label">Secret</label>
+        <input type="password" class="form-control" [(ngModel)]="newWalletSecret">
+        <button type="button" class="btn btn-default btn-block mt-2" (click)="onCreateWallet()">Create Wallet</button>
+
+    </div>  
+
+
+    <div class="form-group my-3">
+        <h2>Import Existing Wallet</h2>
+        <p>Using mnemonic of your existing wallet, you can import it and secure it with a new secret.</p>        
+        <label class="form-control-label">Mnemonic</label>
+        <textarea class="form-control"rows="4" [(ngModel)]="importWalletMnemonic"></textarea>
+        <label class="form-control-label">Secret</label>
+        <input type="password" class="form-control" [(ngModel)]="importWalletSecret">
+        <button type="button" class="btn btn-default btn-block mt-2" (click)="onImportWallet()">Import Wallet</button>
+    </div>         
+</div>

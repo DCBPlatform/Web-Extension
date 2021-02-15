@@ -1,0 +1,45 @@
+<nav
+  id="navbar-main"
+  class="navbar navbar-horizontal navbar-main navbar-expand-lg navbar-dark bg-default"
+  style="width: 400px;">
+  <div class="container">
+    <a
+    [routerLink]="['/apps']"
+    class="btn btn-default btn-icon">         
+    <span class="btn-inner--icon">
+        <i class="fas fa-cubes fa-2x"></i>
+    </span>             
+  </a>    
+
+  <a class="navbar-brand" [routerLink]="['/']">
+    <img src="assets/img/brand/white.png" />
+  </a>
+
+    <a
+    [routerLink]="['/wallet']"
+    class="btn btn-default btn-icon">         
+    <span class="btn-inner--icon">
+        <i class="fas fa-wallet fa-2x ml-2"></i>
+    </span>             
+  </a>      
+
+  </div>
+</nav>
+
+<router-outlet></router-outlet>
+
+<footer id="footer-main">
+  <div class="container">
+    <div class="row">
+    </div>
+  </div>
+</footer>
+
+<ngx-spinner 
+bdColor="rgba(0, 0, 0, 0.8)" 
+size = "large" 
+color = "#fff" 
+type = "ball-atom" 
+[fullScreen] = "true">
+  <p style="color: white" > Loading... </p>
+</ngx-spinner>

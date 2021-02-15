@@ -1,0 +1,32 @@
+<div class="container">
+
+
+  <ul class="list-group list-group-flush list">
+    <li class="list-group-item" *ngFor="let wallet of wallets" style="background-color: transparent !important; border: 0px !important;">
+      <div class="row align-items-center">
+        <!-- <div class="col-auto">
+          
+          <a class="avatar rounded-circle">
+            <img alt="Image placeholder" src="../../assets/img/theme/team-1.jpg">
+          </a>
+        </div> -->
+        <div class="col">
+          <h4 class="mb-0">
+            XXX DCB
+          </h4>
+          <!-- <span class="text-success">●</span> -->
+          <p><small>{{wallet.publicKeyDisplay}} <i class="fas fa-copy fa-xs ml-2" (click)="copyAddress(wallet.publicKey)"></i></small></p>
+
+        </div>
+        <div class="col-auto mt-1">
+          <button type="button" class="btn btn-sm btn-info">Show Mnemonic</button>
+          <button type="button" class="btn btn-sm btn-danger">Remove Wallet</button>
+        </div>
+      </div>
+    </li>
+  </ul>  
+
+  <button type="button" class="btn btn-default btn-block px-3 my-3" (click)="addWallet()">Add Wallet</button>
+
+     
+</div>
